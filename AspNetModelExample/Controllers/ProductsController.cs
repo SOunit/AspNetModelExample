@@ -23,5 +23,17 @@ namespace AspNetModelExample.Controllers
         {
             return View();
         }
+
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost, ActionName("Create")]
+        //public ActionResult CreatePost(int ProductId, string ProductName, double Rate)
+        public ActionResult CreatePost(Product p)
+        {
+            return View();
+        }
     }
 }
